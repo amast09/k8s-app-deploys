@@ -5,13 +5,13 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: portfolio-rebalancer.localhost
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        - backend:
-            service:
-              name: pr
-              port:
-                number: 80
+    - host: portfolio-rebalancer.localhost
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: pr
+                port:
+                  number: 80
