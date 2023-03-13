@@ -12,4 +12,10 @@ spec:
     kind: GitRepository
     name: portfolio-rebalancer
   targetNamespace: portfolio-rebalancer
-
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: portfolio-rebalancer
+resources:
+  - namespace.yaml
+  - repository.yaml
