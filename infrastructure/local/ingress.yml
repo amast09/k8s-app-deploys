@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: local-ingress
 spec:
-  ingressClassName: nginx
+  ingressClassName: local-nginx
   rules:
     - host: portfolio-rebalancer.localhost
       http:
