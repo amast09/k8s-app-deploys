@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 30s
+  url: https://github.com/amast09/portfolio-rebalancer.git
   ref:
     branch: main
-  url: https://github.com/amast09/portfolio-rebalancer.git
 
