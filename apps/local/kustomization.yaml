@@ -5,6 +5,5 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-resources:
-  - ../base/portfolio-rebalancer
-  - ingress.yaml
+path: ../base/portfolio-rebalancer
+prune: true
