@@ -11,6 +11,12 @@ spec:
     ingress:
       hosts:
         - host: portfolio-rebalancer.localhost
-          paths:
-            - path: /
-              pathType: ImplementationSpecific
+          http:
+            paths:
+              - path: /
+                pathType: Prefix
+                backend:
+                  service:
+                    name: pr
+                    port:
+                      number: 80
