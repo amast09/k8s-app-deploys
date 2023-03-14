@@ -6,10 +6,10 @@ metadata:
   namespace: flux-system
 spec:
   interval: 30s
+  timeout: 30s
   sourceRef:
     kind: GitRepository
     name: flux-system
   path: ./apps
   prune: true
   wait: true
-  timeout: 30s
