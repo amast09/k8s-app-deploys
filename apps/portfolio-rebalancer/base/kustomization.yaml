@@ -3,5 +3,3 @@ kind: Kustomization
 namespace: portfolio-rebalancer
 resources:
   - namespace.yaml
-  - repository.yaml
-  - release.yaml
