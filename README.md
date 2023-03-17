@@ -8,6 +8,29 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 kubectl port-forward --namespace=ingress-nginx service/ingress-nginx-controller 80:80
 ```
 
+Create Kind Cluster
+
+```
+kind create cluster --name k8s-app-deploys --config clusters/local/kind-cluster.yaml
+export GITHUB_TOKEN=???
+export GITHUB_USER=???
+flux bootstrap github \
+  --owner=amast09 \
+  --repository=k8s-app-deploys \
+  --branch=main \
+  --personal \
+  --private=false \
+  --read-write-key=true \
+  --reconcile=true \
+  --path=clusters/local
+```
+
+Tear Down Cluster
+
+```
+kind delete cluster --name k8s-app-deploys
+```
+
 Quick testing
 
 ```
