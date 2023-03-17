@@ -1,7 +1,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: portfolio-rebalancer
+  name: portfolio-rebalancer-release
   namespace: portfolio-rebalancer
 spec:
   interval: 30s

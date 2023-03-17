@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: GitRepository
 metadata:
-  name: portfolio-rebalancer
+  name: portfolio-rebalancer-repository
   namespace: portfolio-rebalancer
 spec:
   interval: 30s
