@@ -11,7 +11,7 @@ kubectl port-forward --namespace=ingress-nginx service/ingress-nginx-controller 
 Create Kind Cluster
 
 ```
-kind create cluster --name k8s-app-deploys --config clusters/local/kind-cluster.yaml
+kind create cluster --name k8s-app-deploys --config kind-cluster.yaml
 export GITHUB_TOKEN=???
 export GITHUB_USER=???
 flux bootstrap github \
