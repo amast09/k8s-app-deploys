@@ -26,6 +26,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./infrastructure/kind-nginx-ingress.yaml
+  path: ./infrastructure
   prune: true
   wait: true
