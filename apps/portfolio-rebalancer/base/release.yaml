@@ -9,5 +9,5 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: portfolio-rebalancer
+    name: portfolio-rebalancer-release
   targetNamespace: portfolio-rebalancer
