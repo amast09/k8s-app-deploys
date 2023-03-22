@@ -63,7 +63,7 @@ apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
   name: self-signed-issuer
-  namespace: sandbox
+  namespace: cert-manager
 spec:
   ca:
     secretName: root-secret
